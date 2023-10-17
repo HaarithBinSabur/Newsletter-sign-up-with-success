@@ -3,7 +3,7 @@ const subBtn = document.getElementsByClassName("button")[0];
 const error = document.getElementsByClassName("error")[0];
 const signupForm = document.getElementsByClassName("card__front")[0];
 const successForm = document.getElementsByClassName("card__back")[0];
-const emailText = document.getElementsByClassName("card__info")[0].querySelector("strong");
+const emailText = document.querySelector(".card__info strong")
 
 let emailInputValue;
 
@@ -35,7 +35,7 @@ function flipCard() {
 }
 
 function dismissCard() {
-  signupForm.style.display = "block";
+  signupForm.style.display = "flex";
   successForm.style.display = "none";
 }
 
